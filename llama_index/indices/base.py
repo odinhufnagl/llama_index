@@ -406,13 +406,13 @@ class BaseIndex(Generic[IS], ABC):
 
             if chat_mode == ChatMode.REACT:
                 return ReActAgent.from_tools(
-                    tools=[query_engine_tool],
+                   # tools=[query_engine_tool],
                     llm=llm,
                     **kwargs,
                 )
             elif chat_mode == ChatMode.OPENAI:
                 return OpenAIAgent.from_tools(
-                    tools=[query_engine_tool],
+                 #   tools=[query_engine_tool],
                     llm=llm,
                     **kwargs,
                 )
